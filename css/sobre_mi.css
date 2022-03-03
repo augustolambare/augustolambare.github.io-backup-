@@ -138,3 +138,30 @@ header .option-icon {
 .header_social .instagram-icon {
     margin: 0;
 }
+
+/*BODY*/
+main {
+    margin-top: 34px;
+}
+main h1 {
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+main h3 {
+    font-size: 20px;
+    margin: 32px 0 12px;
+}
+main p {
+    font-size: 16px;
+    line-height: 150%;
+}
+main .skills {
+    padding-left: 26px;
+    font-size: 16px;
+}
+main .skills li::marker {
+    color: var(--grey);
+}
+main .skills li {
+    padding-left: 6px;
+}
