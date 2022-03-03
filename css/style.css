@@ -1,6 +1,6 @@
 :root {
     --black: #000000;
-    --grey: #999999;
+    --grey: #e2e0e0;
     --blue: #1e3a8a;
     --blue-light: #dbeafe;
     --white: #ffffff;
@@ -118,6 +118,8 @@ header .option-icon {
     padding: 4px 6px;
     border-radius: 15px;
     border: 1px solid var(--blue);
+    text-decoration: none;
+    color: var(--black);
 }
 .header_social {
     display: flex;
@@ -135,4 +137,57 @@ header .option-icon {
 }
 .header_social .instagram-icon {
     margin: 0;
+}
+
+/*here star body*/
+.post-container a {
+    text-decoration: none;
+    color: var(--black);
+}
+.post-h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 26px 0 32px 0;
+}
+.post img {
+    width: 100%;
+    height: 30vmax;
+    object-fit: cover;
+}
+.post .description {
+    padding: 24px;
+}
+.post .description:hover {
+    background-color: var(--blue-light);
+}
+.post {
+    border: 2px solid var(--grey);
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.last-post {
+    margin: 0;
+}
+.post .post-icon {
+    width: 32px;
+    height: 32px;
+}
+.post .description span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.post .description span p {
+    font-size: 16px;
+}
+.post .description h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.post .description p {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 300;
 }
