@@ -34,9 +34,11 @@ header {
     border-radius: 50%;
     margin-right: 15px;
 }
-.profile h2 {
+.profile h2 a {
     font-size: 30px;
     font-weight: 700;
+    text-decoration: none;
+    color: var(--black);
 }
 header .option-icon {
     width: 40px;
