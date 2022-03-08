@@ -211,6 +211,9 @@ main .skills li {
     .header_time-zone {
         margin: 0;
     }
+    .header_nav-bar li a:hover {
+        text-decoration: underline;
+    }
 
     main {
         max-width: 752px;
