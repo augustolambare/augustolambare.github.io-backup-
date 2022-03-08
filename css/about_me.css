@@ -1,7 +1,8 @@
 :root {
     --black: #000000;
     --grey: #e2e0e0;
-    --blue: #1e3a8a;
+    --blue: #1d4ed8;
+    --blue-dark: #1e3a8a;
     --blue-light: #dbeafe;
     --white: #ffffff;
 }
@@ -83,7 +84,7 @@ header .option-icon {
 .header_nav-bar-mobile li a:hover {
     text-decoration: underline;
 }
-.header_nav-bar-mobile .sobre-mi {
+.profile .sobre-mi {
     font-weight: bold;
 }
 .header_nav-bar {
@@ -102,7 +103,7 @@ header .option-icon {
 .my-time {
     font-size: 12px;
     background-color: var(--blue-light);
-    color: var(--blue);
+    color: var(--blue-dark);
     padding: 4px 6px;
     border-radius: 15px;
     display: flex;
@@ -164,4 +165,70 @@ main .skills li::marker {
 }
 main .skills li {
     padding-left: 6px;
+    margin: 6px 0;
+}
+
+@media (min-width: 640px) {
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    /*Hidding the mobile nav-bar*/
+    .header_nav-bar-mobile {
+        display: none;
+    }
+    .div-hidden {
+        display: none;
+    }
+    .div-hidden:hover {
+        display: none;
+    }
+    .div-hidden:hover > .header_nav-bar-mobile {
+        display: none;
+    }
+
+    .header_nav-bar {
+        display: block;
+        display: flex;
+        margin-left: auto;
+    }
+    .header_nav-bar li {
+        list-style: none;
+        padding: 8px;
+    }
+    .header_nav-bar li a {
+        text-decoration: none;
+        color: var(--blue);
+        font-size: 16px;
+    }
+    .time-social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_time-zone {
+        margin: 0;
+    }
+
+    main {
+        max-width: 752px;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+    main h1 {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    main h3 {
+        font-size: 24px;
+        margin: 32px 0 12px;
+    }
+    main p {
+        font-size: 18px;
+    }
+    main .skills {
+        font-size: 18px;
+    }
 }
